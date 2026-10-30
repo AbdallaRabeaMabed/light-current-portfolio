@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abdalla Rabea Mabed — Light Current Systems Portfolio</title>
+<meta name="author" content="Abdalla Rabea Mabed" />
+<meta name="description" content="Light current (ELV) systems design portfolio — Fire Alarm, CCTV, Telephone & Data, TV, Access Control" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="sheet-frame">
+
+  <!-- ===== Title Block ===== -->
+  <header class="titleblock">
+    <div class="tb-left">
+      <span class="tb-eyebrow">LIGHT CURRENT SYSTEMS — DRAWING SET</span>
+      <h1 class="tb-name">Abdalla Rabea Mabed <span class="tb-role">/ Light Current Systems Design</span></h1>
+    </div>
+  </header>
+
+  <div class="body-grid">
+
+    <!-- ===== Sheet Index / Nav ===== -->
+    <nav class="sheet-index" id="sheet-index" aria-label="Drawing sheet index">
+      <div class="si-label">SHEET INDEX</div>
+      <ul id="nav-list"></ul>
+      <div class="si-legend">
+        <div class="si-legend-title">LEGEND</div>
+        <div class="si-legend-row"><span class="dot" style="--c:var(--fa)"></span>Fire Alarm</div>
+        <div class="si-legend-row"><span class="dot" style="--c:var(--cctv)"></span>CCTV</div>
+        <div class="si-legend-row"><span class="dot" style="--c:var(--tel)"></span>Telephone & Data</div>
+        <div class="si-legend-row"><span class="dot" style="--c:var(--tv)"></span>IPTV</div>
+        <div class="si-legend-row"><span class="dot" style="--c:var(--ac)"></span>Access Control</div>
+      </div>
+    </nav>
+
+    <!-- ===== Active Sheet ===== -->
+    <main class="sheet" id="sheet-main">
+      <!-- populated by script.js -->
+    </main>
+
+  </div>
+
+  <footer class="site-footer">
+    <span>Drawings produced in AutoCAD</span>
+    <a href="https://github.com/AbdallaRabeaMabed" target="_blank" rel="noopener">github.com/AbdallaRabeaMabed</a>
+  </footer>
+</div>
+
+<!-- ===== Lightbox ===== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+  <div class="lightbox-zoom-controls">
+    <button id="lightbox-zoom-out" aria-label="Zoom out">−</button>
+    <button id="lightbox-zoom-reset" aria-label="Reset zoom">Reset</button>
+    <button id="lightbox-zoom-in" aria-label="Zoom in">+</button>
+  </div>
+  <div class="lightbox-imgwrap" id="lightbox-imgwrap">
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script src="https://unpkg.com/@panzoom/panzoom@4.4.2/dist/panzoom.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
